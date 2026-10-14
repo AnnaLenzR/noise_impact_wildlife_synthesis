@@ -1,156 +1,79 @@
-# **A systematic map of systematic reviews on anthropogenic noise impacts on wildlife: evidence gaps, policy attention, and quality appraisal**
+# Noise impacts on wildlife: synthesis data and analysis
 
-Anna Lenz1*, Ayumi Mizuno1, Erick Lundgren1, Kyle Morrison2, Santiago Ortega1, Malgorzata Lagisz 1, 2#, Shinichi Nakagawa 1, 2# </br>
+Data, coding metadata, analysis code and figures supporting:
 
+**Lenz, A., Mizuno, A., Lundgren, E., Morrison, K., Ortega, S., Lagisz, M., & Nakagawa, S. (2026). A systematic map of syntheses on anthropogenic noise impacts on wildlife: evidence gaps, policy attention, and quality appraisal.** *Environmental Science and Pollution Research*. [Article DOI: 10.1007/s11356-026-38268-9](https://doi.org/10.1007/s11356-026-38268-9).
 
-1 Collaboration for Open Science and Synthesis in Ecology and Evolution (COSSEE), Department of Biological Sciences, University of Alberta, 11455 Saskatchewan Dr NW, Edmonton, Alberta, T6G 2E9, Canada  </br>
-2 Evolution & Ecology Research Centre and the School of Biological, Earth and Environmental Sciences at the University of New South Wales, Sydney 2052, NSW, Australia </br>
+We mapped 50 syntheses, appraised all 50 using CEESAT, analysed bibliometric records for 47, and classified 537 retained policy-citation records linked to 23 syntheses. Policy-record counts are not counts of globally distinct policy documents.
 
+## Contents
 
-#Senior authors: Malgorzata Lagisz - Email: losialagisz@gmail.com and Shinichi Nakagawa - Email: snakagaw@ualberta.ca  </br>
+| Location | Contents |
+|---|---|
+| [Data](Data/) | Six final CSV datasets and the accompanying Scopus BibTeX file |
+| [Metadata](Metadata/) | One metadata document per data file, including column definitions, coding and file checksums |
+| [R/Wildlife_syntheses_figures_.Rmd](R/Wildlife_syntheses_figures_.Rmd) | Complete analysis and figure workflow, with processing and plotting helpers included |
+| [Analysis.html](Analysis.html) | Self-contained report with code, analyses and figures; download and open in a browser |
+| [Figures/Final_figures](Figures/Final_figures/) | Final main-figure PNG/TIFF exports; Figure 2's original artwork is not distributed |
+| [Figures/Supplementary](Figures/Supplementary/) | Final supplementary Figures S1–S11 |
+| [Metadata/software](Metadata/software/) | R/package versions and package citations |
 
-*Corresponding author: Anna Lenz </br>
+Working notes, draft manuscripts, archives, intermediate outputs and local artwork sources are not part of this release. The protocol is available on OSF rather than duplicated here.
 
----
+## Datasets and metadata
 
-## **Overview**
-This repository contains the data, code, and figures supporting the paper: </br>
+| Dataset | Coverage | Metadata |
+|---|---|---|
+| [Dataset 1](Data/Dataset1_map_data_extraction.csv) | Systematic-map extraction: 50 syntheses | [Definitions](Metadata/Dataset1_map_data_extraction.md) |
+| [Dataset 2](Data/Dataset2_bibliometric_data.csv) | Bibliometric data: 47 Scopus-indexed syntheses | [Definitions](Metadata/Dataset2_bibliometric_data.md) |
+| [Dataset 3](Data/Dataset_3_policy_data_extraction.csv) | 537 retained policy-citation records | [Definitions](Metadata/Dataset_3_policy_data_extraction.md) |
+| [Dataset 3.1](Data/Dataset_3.1_policy_citation_counts_PlumX.csv) | PlumX counts for 50 syntheses plus one summary row | [Definitions](Metadata/Dataset_3.1_policy_citation_counts_PlumX.md) |
+| [Dataset 4](Data/Dataset4_ceesat_assessments.csv) | CEESAT ratings and supporting justifications for 50 syntheses | [Definitions and rating criteria](Metadata/Dataset4_ceesat_assessments.md) |
+| [Dataset 5](Data/Dataset5_ceesat_processed.csv) | Numeric CEESAT scores for the same 50 syntheses | [Definitions](Metadata/Dataset5_ceesat_processed.md) |
+| [Bibliography](Data/bibliometric.bib) | BibTeX records for the 47 bibliometric syntheses | [Definitions](Metadata/bibliometric.md) |
 
-Lenz A., Mizuno A., Lundgren E., Morrison K., Ortega S., Lagisz M., & Nakagawa S. (2025). A systematic map of systematic reviews on anthropogenic noise impacts on wildlife: evidence gaps, policy attention, and quality appraisal [Preprint]. EcoEvoRxiv. https://doi.org/10.32942/X2435S </br>
+The metadata lists the actual CSV headers, including retained spaces and the unnamed notes column in Dataset 1. Blank cells are not automatically zero. Dataset 3.1's final `Total` row is not a synthesis and must be excluded from study-level calculations. Dataset 3 retains repeated records that can represent chapter or compilation citations; the analysis does not remove additional rows.
 
-The project systematically maps almost two decades of secondary syntheses (systematic reviews, maps, and meta-analyses) addressing the effects of anthropogenic noise on wildlife. It evaluates the methodological quality of these syntheses, examines their bibliometric patterns, and quantifies their influence in policy documents.
+## View the report offline
 
+Download [Analysis.html](Analysis.html) using GitHub's **Download raw file** button, then open the downloaded file in a browser. Its figures, styles and scripts are embedded; no R installation, accompanying files or internet connection is needed to view it. External reference links require internet access. GitHub displays HTML source rather than running the report on the file page.
 
----
+## Reproduce the analysis
 
-## **Abstract**
-As systematic reviews on the effects of anthropogenic noise on wildlife increasingly inform policy, a critical evaluation of this secondary evidence is essential. We assessed the scope, quality, and policy attention of existing syntheses in this field. Following a preregistered protocol, we conducted a systematic search in Scopus, Web of Science, and Google Scholar, identifying 50 syntheses (systematic reviews, maps, and meta-analyses). We included all 50 syntheses in the systematic map, critical appraisal, and policy-attention analysis, and found that 23 had received policy citations. We included 47 syntheses in the bibliometric analysis. Syntheses were published between 2008 and 2025, with a focus on behavioural, physiological, and communication outcomes in wildlife. Most examined transportation and energy-related noise and reviewed evidence from marine, followed by terrestrial ecosystems. We found critical gaps in taxonomic coverage, with notable underrepresentation of invertebrates, amphibians, and reptiles. Most syntheses were led by researchers from the United Kingdom, Canada, and the United States, with limited participation from non-English-speaking countries. Almost half were cited in policy documents, mainly government and regulatory submissions. Syntheses on marine environments received the most policy citations, while those on urban noise received the least. There was no significant difference in quality scores between policy-cited and non-cited syntheses, and most were rated low due to methodological and reporting shortcomings. Our findings highlight the need to fill synthesis gaps and improve methodological transparency to strengthen the evidence base for policy decisions on anthropogenic noise. </br>
+The report was tested with **R 4.5.1**. Package versions appear at the end of the HTML report and in [Metadata/software/Rpackages_versions.csv](Metadata/software/Rpackages_versions.csv). RStudio is optional; R Markdown rendering requires Pandoc (included with RStudio).
 
-Keywords: Bibliometric analysis; Umbrella review; CEESAT appraisal; Soundscape ecology; Environmental stressors; Conservation policy; Biodiversity management
+1. Clone or download this repository and open `Umbrella_review_noise.Rproj`, or set the working directory to the repository root.
+2. Install the packages listed in the R Markdown setup chunk if needed. The workflow checks dependencies but never installs them automatically.
+3. Render from the repository root:
 
----
+```r
+rmarkdown::render(
+  "R/Wildlife_syntheses_figures_.Rmd",
+  output_file = "Analysis.html",
+  output_dir = getwd()
+)
+```
 
-## **Repository Structure**
+Rendering validates Dataset 5 against a reconstruction from Dataset 4, then reads the final Dataset 5. The reconstruction uses Red = 0, Amber = 1, Green = 3 and Gold = 4, and checks all 1,050 cells. It stays in memory: no duplicate dataset is saved, and the source datasets are not overwritten.
 
-<pre><code>
-├── Umbrella_review_noise.Rproj     # R project file
-├── LICENSE                         # MIT License
-├── R/                              # Annotated R scripts for analyses and figures
-│   ├── Overview_figures copy.Rmd                  # Main figure and analysis workflow
-│   ├── Figure_1_systematic_map_evidence_matrix.R # Standalone main Figure 1
-│   └── Figure_3_bibliometric_map_chord.R         # Standalone main Figure 3
-│
-├── final_ms/                       # Submission-ready Word documents
-│   ├── Noise_SysMap_MS_200726_aligned.docx
-│   ├── Online_Resource1_200726_aligned.docx
-│   └── Reviewers_Responses_200726_aligned.docx
-│
-├── Data/                           # Final cleaned datasets used in analyses
-│   ├── Dataset1_map_data_extraction.csv
-│   ├── Dataset2_bibliometric_data.csv
-│   ├── Dataset_3_policy_data_extraction.csv
-│   ├── Dataset_3.1_policy_citation_counts_PlumX.csv
-│   ├── Dataset4_ceesat_assessments.csv
-│   ├── Dataset5_ceesat_processed.csv
-│   └── bibliometric.bib            # Dataset2_bibliometric_data in .bib format
-│
-├── Metadata/                       # Codebooks describing each dataset
-│   ├── Dataset1_map_data_extraction.csv
-│   ├── Dataset2_bibliometric_data.csv
-│   ├── Dataset_3_policy_data_extractioncsv.csv
-│   └── Dataset4_ceesat_assesments.csv
-│
-├── Figures/                        # Final publication figures (PNG)
-│   ├── Figure_1_Systematic_map.png
-│   ├── Figure_2_taxonomic_scope.png
-│   ├── Figure_3_authors_affiliation_collaboration.png
-│   ├── Figure_4_scope_policy_ documents_citing_syntheses.png
-│   ├── Figure_5_CEESAT_assessment_syntheses.png
-│   └── raw/                        # Reproducible figure-workflow outputs
-</code></pre>
+By default, rendering updates only the HTML report and leaves the final figure files intact. To regenerate figure exports explicitly:
 
----
+```r
+rmarkdown::render(
+  "R/Wildlife_syntheses_figures_.Rmd",
+  output_file = "Analysis.html",
+  output_dir = getwd(),
+  params = list(export_figures = TRUE)
+)
+```
 
-## **Datasets**
+This exports main Figures 1, 3, 4 and 5 as 600-dpi PNG/TIFF and PDF, a code-generated base for Figure 2, and supplementary Figures S3–S11 as PNG/PDF. The submitted Figure 2 was composed manually using the author's original animal artwork, which is not included. Figures S1 and S2 are manually prepared diagrams. S4 uses an embedded publication word-cloud raster with an input-frequency check; if the keyword data change, the workflow stops until the embedded cloud and its frequency table are updated. Fonts and rendering engines can affect exact pixel appearance on another computer.
 
-| File                                                      | Description                                                                                                                                                   |
-| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Dataset1_map_data_extraction.csv**                      | Main dataset for the systematic map. Includes metadata and classification of 50 included syntheses by study type, taxa, outcomes, and noise source.           |
-| **Dataset2_bibliometric_data.csv** / **bibliometric.bib** | Bibliometric information for all syntheses (authors, affiliations, journal, citation counts). The `.bib` version is the same document for analysis in R.      |
-| **Dataset_3_policy_data_extraction.csv**                  | Records of policy citations, including document type, level, country, and ecological context.                                                                 |
-| **Dataset_3.1_policy_citation_counts_PlumX.csv**          | Extracted policy citation counts and attention metrics from PlumX.                                                                                            |
-| **Dataset4_ceesat_assessments.csv**                       | Raw CEESAT 2.1 appraisal scores for each synthesis.                                                                                                           |
-| **Dataset5_ceesat_processed.csv**                         | Cleaned CEESAT dataset used in visualisations and statistical summaries.                                                                                      |
+## Protocol and citation
 
----
+- [Original OSF protocol project, deposited 30 May 2025](https://osf.io/dmjc4/) — DOI [10.17605/OSF.IO/DMJC4](https://doi.org/10.17605/OSF.IO/DMJC4).
+- [Formal OSF registration of the same protocol, created later for preservation](https://osf.io/7bx6g/) — DOI [10.17605/OSF.IO/7BX6G](https://doi.org/10.17605/OSF.IO/7BX6G).
 
-## **Reproducibility**
+Please cite the article above when using these materials. [CITATION.cff](CITATION.cff) provides the citation in a machine-readable format. The [MIT licence](LICENSE) applies to repository software; bibliographic source content retains its original rights.
 
-**Requirements:**
-- R (≥ 4.3.0) </br>
-- RStudio (Posit, ≥ 2024.12)
-
-**Core Packages:**
-tidyverse, ggplot2, patchwork, paletteer, treemapify, circlize, ComplexUpset, png, rphylopic, ggthemes, readxl, here, dplyr, stringr, bibliometrix, RColorBrewer, rnaturalearth, rnaturalearthdata
-
-**To reproduce Figures and Analyses**
-1. Clone this repository </br>
-    <pre><code>
-   git clone https://github.com/AnnaLenzR/Umbrella_review_noise.git
-   cd Umbrella_review_noise </br>
-    </code></pre>
-2. Open Umbrella_review_noise.Rproj in RStudio. </br>
-3. Run the main analysis script:
-
-   rmarkdown::render("R/Overview_figures copy.Rmd")
-
-4. The workflow generates the five main figures and supplementary figures in the `/Figures` directory.
-
----
-
-## **Script Outline**
-
-- The main R Markdown workflow is organised by figure sections and analysis:
-- Load packages and data </br>
-**Figures:**
-- Figure 1: Systematic-map evidence matrix and coverage summary
-- Figure 2: Taxonomic scope treemap
-- Figure 3: First-author geography and country co-authorship chord diagram
-- Figure 4: Scope of policy documents citing the included syntheses
-- Figure 5: CEESAT reporting and methodological quality scores </br>
-**Statistical comparisons:**
-- Analysis: Syntheses quality analysis— Cited vs not cited in policy </br>
-**Supplementary figures:** </br>
-- Figure S3: Synthesis characteristics and content mapping
-- Figures S4–S5: Citation and keyword analyses
-- Figures S6–S10: Policy-citation counts, trends, scope, and geography
-- Figure S11: CEESAT comparison for policy-cited and non-policy-cited syntheses
-
----
-
-## **Citation **
-If you use **this repository** or its data, please cite: </br>
-
-Lenz, A., Mizuno, A., Lundgren, E., Morrison, K., Ortega, S., Lagisz, M., & Nakagawa, S. (2025).
-A systematic map of systematic reviews on anthropogenic noise impacts on wildlife: evidence gaps, policy attention, and quality appraisal.
-University of Alberta. https://github.com/AnnaLenzR/Umbrella_review_noise
-
-### Preprint and protocol
-
-Find the **preprint** here: </br>
-https://ecoevorxiv.org/repository/dashboard/10446/
-
-The **protocol** is preregistered in OSF: </br>
-https://osf.io/dmjc4/
-
----
-
-## **Contact**
-
-Corresponding author: </br>
-Anna Lenz </br>
-Collaboration for Open Science and Synthesis in Ecology and Evolution (COSSEE) </br>
-University of Alberta, Edmonton, AB, Canada </br>
-📧 lenzrive@ualberta.ca
-
-
+Contact: Anna Lenz — [lenzrive@ualberta.ca](mailto:lenzrive@ualberta.ca).

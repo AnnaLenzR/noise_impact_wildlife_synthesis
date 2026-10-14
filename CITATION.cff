@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+message: "If you use these datasets or code, please cite the associated article."
+title: "Noise impacts on wildlife: synthesis data and analysis"
+type: dataset
+authors:
+  - family-names: Lenz
+    given-names: Anna
+  - family-names: Mizuno
+    given-names: Ayumi
+  - family-names: Lundgren
+    given-names: Erick
+  - family-names: Morrison
+    given-names: Kyle
+  - family-names: Ortega
+    given-names: Santiago
+  - family-names: Lagisz
+    given-names: Malgorzata
+  - family-names: Nakagawa
+    given-names: Shinichi
+repository-code: "https://github.com/AnnaLenzR/noise_impact_wildlife_synthesis"
+url: "https://github.com/AnnaLenzR/noise_impact_wildlife_synthesis"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Lenz
+      given-names: Anna
+    - family-names: Mizuno
+      given-names: Ayumi
+    - family-names: Lundgren
+      given-names: Erick
+    - family-names: Morrison
+      given-names: Kyle
+    - family-names: Ortega
+      given-names: Santiago
+    - family-names: Lagisz
+      given-names: Malgorzata
+    - family-names: Nakagawa
+      given-names: Shinichi
+  title: "A systematic map of syntheses on anthropogenic noise impacts on wildlife: evidence gaps, policy attention, and quality appraisal"
+  journal: "Environmental Science and Pollution Research"
+  year: 2026
+  doi: "10.1007/s11356-026-38268-9"

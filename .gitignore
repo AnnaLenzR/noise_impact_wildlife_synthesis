@@ -5,6 +5,8 @@
 !/LICENSE
 !/CITATION.cff
 !/Analysis.html
+!/index.html
+!/.nojekyll
 !/Umbrella_review_noise.Rproj
 !/Data/
 /Data/*

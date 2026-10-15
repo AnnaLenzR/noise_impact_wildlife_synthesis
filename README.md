@@ -34,9 +34,15 @@ Working notes, draft manuscripts, archives, intermediate outputs and local artwo
 
 The metadata lists the actual CSV headers, including retained spaces and the unnamed notes column in Dataset 1. Blank cells are not automatically zero. Dataset 3.1's final `Total` row is not a synthesis and must be excluded from study-level calculations. Dataset 3 retains repeated records that can represent chapter or compilation citations; the analysis does not remove additional rows.
 
-## View the report offline
+## View the report
 
-Download [Analysis.html](Analysis.html) using GitHub's **Download raw file** button, then open the downloaded file in a browser. Its figures, styles and scripts are embedded; no R installation, accompanying files or internet connection is needed to view it. External reference links require internet access. GitHub displays HTML source rather than running the report on the file page.
+[Open the online report](https://annalenzr.github.io/noise_impact_wildlife_synthesis/).
+
+### Offline copy
+
+Download [Analysis.html](Analysis.html) using GitHub's **Download raw file** button, then open the downloaded file in a browser. The report includes the study introduction, authors and affiliations, citation, and links to the paper and both OSF records. A section sidebar groups the figures and analyses; expand “View code and analysis notes” beneath each output to inspect the workflow. The layout and COSSEE logo (by Ayumi Mizuno) are embedded in the R Markdown source, so future renders retain this presentation.
+
+Its figures, styles and scripts are embedded; no R installation, accompanying files or internet connection is needed to view it. External reference links require internet access. GitHub displays HTML source rather than running the report on the file page.
 
 ## Reproduce the analysis
 

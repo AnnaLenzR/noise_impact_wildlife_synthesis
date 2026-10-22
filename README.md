@@ -113,15 +113,15 @@ Explore our [interactive tutorial](https://annalenzr.github.io/noise_impact_wild
 
 ## Protocol and paper citations
 
-**Protocol.** Lenz A, Lundgren E, Mizuno A, Morrison K, Ortega S, Lagisz M, Nakagawa S. 2025. A systematic map of systematic reviews on anthropogenic noise impact on wildlife—protocol. OSF. https://doi.org/10.17605/OSF.IO/DMJC4.
+Lenz A, Lundgren E, Mizuno A, Morrison K, Ortega S, Lagisz M, Nakagawa S. 2025. A systematic map of systematic reviews on anthropogenic noise impact on wildlife—protocol. OSF. https://doi.org/10.17605/OSF.IO/DMJC4.
 
-**Original OSF project.** Nakagawa S, Lundgren E, Lagisz M, Ortega S, Morrison K, Mizuno A, Lenz A. 2025. A systematic map of systematic reviews on anthropogenic noise impact on wildlife—protocol [project]. OSF. https://doi.org/10.17605/OSF.IO/DMJC4. The protocol document and project share this DOI; their author orders follow the document and the OSF project’s citation metadata, respectively.
+Nakagawa S, Lundgren E, Lagisz M, Ortega S, Morrison K, Mizuno A, Lenz A. 2025. A systematic map of systematic reviews on anthropogenic noise impact on wildlife—protocol. OSF. https://doi.org/10.17605/OSF.IO/DMJC4.
 
-**OSF registration.** Lenz A, Nakagawa S, Lagisz M, Morrison K, Mizuno A, Ortega S, Lundgren E. 2025. A systematic map of systematic reviews on anthropogenic noise impact on wildlife—protocol [registration]. OSF. https://doi.org/10.17605/OSF.IO/7BX6G. The DOI metadata assigns 2025 to the protocol; the formal registration was created on 9 October 2026.
+Lenz A, Nakagawa S, Lagisz M, Morrison K, Mizuno A, Ortega S, Lundgren E. 2025. A systematic map of systematic reviews on anthropogenic noise impact on wildlife—protocol. OSF. https://doi.org/10.17605/OSF.IO/7BX6G.
 
-**Article.** Lenz A, Mizuno A, Lundgren E, Morrison K, Ortega S, Lagisz M, Nakagawa S. 2026. A systematic map of syntheses on anthropogenic noise impacts on wildlife: evidence gaps, policy attention, and quality appraisal. Environ Sci Pollut Res. https://doi.org/10.1007/s11356-026-38268-9.
+Lenz A, Mizuno A, Lundgren E, Morrison K, Ortega S, Lagisz M, Nakagawa S. 2026. A systematic map of syntheses on anthropogenic noise impacts on wildlife: evidence gaps, policy attention, and quality appraisal. Environ Sci Pollut Res. https://doi.org/10.1007/s11356-026-38268-9.
 
-**Zenodo repository.** [Authors]. [Year]. A systematic map of syntheses on anthropogenic noise impacts on wildlife: evidence gaps, policy attention, and quality appraisal: datasets and analysis code [dataset and software]. Version [version]. Zenodo. DOI: [to be added after archiving].
+Zenodo citation pending.
 
 Please cite the Zenodo repository when using materials from this repository. We will add the final citation and DOI after archiving this release on Zenodo.
 

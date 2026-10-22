@@ -92,7 +92,7 @@ rmarkdown::render(
 
 The code reconstructs Dataset 5 from Dataset 4 using Red = 0, Amber = 1, Green = 3 and Gold = 4. It checks all 1,050 cells against the final Dataset 5, then uses that final file for analysis. This check runs in memory and does not save another dataset or overwrite the source files.
 
-By default, rendering updates only the HTML report and leaves the final figure files intact. To export the figures as well:
+By default, rendering updates only the HTML tutorial and leaves the final figure files intact. To export the figures as well:
 
 ```r
 rmarkdown::render(
@@ -105,13 +105,11 @@ rmarkdown::render(
 
 This exports main Figures 1, 3, 4 and 5 as 600-dpi PNG/TIFF and PDF, a code-generated base for Figure 2, and supplementary Figures S3–S11 as PNG/PDF. We manually edited the submitted Figure 2 in Affinity Designer 2, adding Anna Lenz’s original animal silhouettes and adjusting the Helvetica font size and appearance. You can find the final Figure 2 in this repository and request the separate original artwork files from Anna. We prepared Figures S1 and S2 manually in Affinity Designer 2. Figure S4 includes a saved word-cloud image. The code checks its keyword frequencies against the data and stops if they differ. If you change the keyword data, update both the image and its frequency table. Fonts and graphics software can affect how the figures look on another computer.
 
-We tested the code with R 4.5.1. The tutorial’s **R packages** table lists the package versions. You also need Pandoc to render the report; RStudio includes it.
+We tested the code with R 4.5.1. The tutorial’s **R packages** table lists the package versions.
 
 ## Interactive tutorial to replicate the figures and analysis
 
-Open the [HTML tutorial](https://annalenzr.github.io/noise_impact_wildlife_synthesis/Analysis.html) to explore the figures and annotated code. You do not need to install software or download other files to read it. Use the sidebar to find the overview, datasets and codebooks, main figures, statistical analysis, and supplementary figures we made in R (S3–S11).
-
-You can also download [Analysis.html](Analysis.html) using GitHub’s **Download raw file** button and open it offline in a browser. Running the code requires R and the datasets, as described above.
+Explore our [interactive tutorial](https://annalenzr.github.io/noise_impact_wildlife_synthesis/Analysis.html) to view the figures, analyses and annotated R code directly in your browser. You don’t need to install software or download any additional files. You can also download the [HTML tutorial](Analysis.html) to read it offline.
 
 ## Protocol and paper citations
 

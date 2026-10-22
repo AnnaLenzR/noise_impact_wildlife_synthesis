@@ -1,8 +1,8 @@
 ﻿Variable,Category/Formats,Definition
-citation_key,BibTeX entry identifier,Identifier after @ARTICLE{; not the extraction study_id. Each entry represents one of the 47 syntheses in Dataset 2. Absent or empty fields indicate unavailable metadata.
+citation_key,BibTeX entry identifier,"BibTeX identifier after @ARTICLE{, separate from study_id. Each entry represents a synthesis in Dataset 2. Missing or empty fields mean no metadata are available."
 abstract,BibTeX text field,Publication abstract.
 affiliations,BibTeX text field,"Institutional affiliations and countries, separated by semicolons."
-author,BibTeX text field,"Authors, separated by BibTeX and."
+author,BibTeX text field,"Author names, separated by the BibTeX word and."
 author_keywords,BibTeX text field,Keywords in the exported author-keyword field.
 coden,BibTeX text field,Journal CODEN identifier.
 doi,BibTeX text field,Digital Object Identifier.
@@ -11,7 +11,7 @@ issn,BibTeX text field,ISSN identifier(s).
 journal,BibTeX text field,Journal or proceedings title.
 keywords,BibTeX text field,Indexed keyword terms.
 language,BibTeX text field,Publication language.
-note,BibTeX text field,Scopus snapshot citation count (Cited by: n).
+note,BibTeX text field,Scopus citation count at the time of export (Cited by: n).
 number,BibTeX text field,Issue number.
 pages,BibTeX text field,Page range; can be empty for article-number publications.
 pmid,BibTeX text field,PubMed identifier.

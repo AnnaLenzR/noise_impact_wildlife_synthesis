@@ -1,15 +1,15 @@
 ﻿Variable,Category/Formats,Definition
-study_id,Text identifier,"Identifier of the included synthesis, usually first author and year. Use the recorded identifier for joins; do not infer publication year from it. The final Total row has a blank study_id and must be excluded from study-level analysis."
+study_id,Text identifier,Identifier for linking the synthesis across datasets. The final Total row has no study_id; exclude it when analysing individual syntheses.
 title,Text,Title of the synthesis.
 authors,Text,Abbreviated author citation.
 year,"Integer, YYYY",Publication year in this dataset.
 language,English; Spanish,Publication language.
-doi,Text,"DOI of the included synthesis, as recorded. A URL or placeholder can occur when a DOI is unavailable; trim whitespace when matching."
+doi,Text,DOI of the synthesis. Some entries use a web link or a missing-value marker when no DOI is available.
 plumx_url,URL / placeholder,PlumX page for the synthesis; -- or --- indicate an unavailable identifier/link.
 policy_cited,Yes; No; Total,"Whether PlumX recorded policy citations. Total identifies the final summary row, which is not a synthesis."
 open_access,Text; semicolon-separated labels,Open-access categories retained from the bibliometric record; blank means no label recorded.
 policy_number_July_9_2025,Nonnegative integer,"Policy-citation count captured on 9 July 2025, before the later extraction and within-synthesis deduplication."
-policy_extraction_date,DD-Mon-YY or blank,Date on which the policy records for that synthesis were extracted.
+policy_extraction_date,DD-Mon-YY or blank,Date we extracted the policy records for the synthesis.
 policy_number_in_date_of_extraction,Nonnegative integer,"Policy-citation count on the recorded extraction date, before within-synthesis deduplication."
-unique_policy_citations,Nonnegative integer,Retained policy-citation count after deduplication within each synthesis. This is not a count of globally distinct policy documents across syntheses.
+unique_policy_citations,Nonnegative integer,Number of policy-citation records after removing duplicates within each synthesis. The same document can cite more than one synthesis.
 Notes,Free text,Extraction and deduplication notes supporting the counts.

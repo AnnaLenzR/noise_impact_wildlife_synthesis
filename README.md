@@ -66,7 +66,7 @@ The Data folder contains the files below. The table lists their full names, cont
   </tr>
   <tr>
     <td valign="top"><a href="Data/Dataset5_ceesat_processed.csv">Dataset5_ceesat_<br>processed.csv</a></td>
-    <td valign="top">Processed CEESAT data: final scores for analysis.</td>
+    <td valign="top">Processed CEESAT data with final scores for analysis. We removed assessment comments and verbatim notes.</td>
     <td valign="top"><a href="Metadata/Dataset5_ceesat_processed_codebook.csv">Dataset5_ceesat_<br>processed_<br>codebook.csv</a></td>
   </tr>
   </tbody>

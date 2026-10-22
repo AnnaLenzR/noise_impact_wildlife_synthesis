@@ -25,15 +25,52 @@ The table below lists the folder names and their contents.
 
 The Data folder contains the files below. The table lists their full names, contents and matching codebooks, using the dataset descriptions from Online Resource 1.
 
-| Dataset file name | Content | Metadata file name |
-|---|---|---|
-| [Dataset1_map_data_extraction.csv](Data/Dataset1_map_data_extraction.csv) | Map data extraction. | [Dataset1_map_data_extraction_codebook.csv](Metadata/Dataset1_map_data_extraction_codebook.csv) |
-| [Dataset2_bibliometric_data.csv](Data/Dataset2_bibliometric_data.csv) | Bibliometric data extracted from Scopus. | [Dataset2_bibliometric_data_codebook.csv](Metadata/Dataset2_bibliometric_data_codebook.csv) |
-| [bibliometric.bib](Data/bibliometric.bib) | The same bibliometric dataset as Dataset 2, in BibTeX format. The code can use this file with bibliometrix to draw the chord diagram; by default, it uses the affiliations in Dataset 2. | [bibliometric_codebook.csv](Metadata/bibliometric_codebook.csv) |
-| [Dataset_3_policy_data_extraction.csv](Data/Dataset_3_policy_data_extraction.csv) | Policy-document data extraction. | [Dataset_3_policy_data_extraction_codebook.csv](Metadata/Dataset_3_policy_data_extraction_codebook.csv) |
-| [Dataset_3.1_policy_citation_counts_PlumX.csv](Data/Dataset_3.1_policy_citation_counts_PlumX.csv) | Policy tracker and policy-citation counts. | [Dataset_3.1_policy_citation_counts_PlumX_codebook.csv](Metadata/Dataset_3.1_policy_citation_counts_PlumX_codebook.csv) |
-| [Dataset4_ceesat_assessments.csv](Data/Dataset4_ceesat_assessments.csv) | CEESAT assessments for the included syntheses. | [Dataset4_ceesat_assessments_codebook.csv](Metadata/Dataset4_ceesat_assessments_codebook.csv) |
-| [Dataset5_ceesat_processed.csv](Data/Dataset5_ceesat_processed.csv) | Processed CEESAT data: final scores for analysis. | [Dataset5_ceesat_processed_codebook.csv](Metadata/Dataset5_ceesat_processed_codebook.csv) |
+<table>
+  <thead>
+    <tr>
+      <th width="25%" align="left">Dataset file name</th>
+      <th width="50%" align="left">Content</th>
+      <th width="25%" align="left">Metadata file name</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td valign="top"><a href="Data/Dataset1_map_data_extraction.csv">Dataset1_map_data_<br>extraction.csv</a></td>
+    <td valign="top">Map data extraction.</td>
+    <td valign="top"><a href="Metadata/Dataset1_map_data_extraction_codebook.csv">Dataset1_map_data_<br>extraction_<br>codebook.csv</a></td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="Data/Dataset2_bibliometric_data.csv">Dataset2_<br>bibliometric_<br>data.csv</a></td>
+    <td valign="top">Bibliometric data extracted from Scopus.</td>
+    <td valign="top"><a href="Metadata/Dataset2_bibliometric_data_codebook.csv">Dataset2_<br>bibliometric_data_<br>codebook.csv</a></td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="Data/bibliometric.bib">bibliometric.bib</a></td>
+    <td valign="top">The same bibliometric dataset as Dataset 2, in BibTeX format. The code can use this file with bibliometrix to draw the chord diagram; by default, it uses the affiliations in Dataset 2.</td>
+    <td valign="top"><a href="Metadata/bibliometric_codebook.csv">bibliometric_<br>codebook.csv</a></td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="Data/Dataset_3_policy_data_extraction.csv">Dataset_3_policy_<br>data_extraction.csv</a></td>
+    <td valign="top">Policy-document data extraction.</td>
+    <td valign="top"><a href="Metadata/Dataset_3_policy_data_extraction_codebook.csv">Dataset_3_policy_<br>data_extraction_<br>codebook.csv</a></td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="Data/Dataset_3.1_policy_citation_counts_PlumX.csv">Dataset_3.1_policy_<br>citation_counts_<br>PlumX.csv</a></td>
+    <td valign="top">Policy tracker and policy-citation counts.</td>
+    <td valign="top"><a href="Metadata/Dataset_3.1_policy_citation_counts_PlumX_codebook.csv">Dataset_3.1_policy_<br>citation_counts_<br>PlumX_codebook.csv</a></td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="Data/Dataset4_ceesat_assessments.csv">Dataset4_ceesat_<br>assessments.csv</a></td>
+    <td valign="top">CEESAT assessments for the included syntheses.</td>
+    <td valign="top"><a href="Metadata/Dataset4_ceesat_assessments_codebook.csv">Dataset4_ceesat_<br>assessments_<br>codebook.csv</a></td>
+  </tr>
+  <tr>
+    <td valign="top"><a href="Data/Dataset5_ceesat_processed.csv">Dataset5_ceesat_<br>processed.csv</a></td>
+    <td valign="top">Processed CEESAT data: final scores for analysis.</td>
+    <td valign="top"><a href="Metadata/Dataset5_ceesat_processed_codebook.csv">Dataset5_ceesat_<br>processed_<br>codebook.csv</a></td>
+  </tr>
+  </tbody>
+</table>
 
 ## How to reproduce the analysis
 

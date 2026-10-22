@@ -1,8 +1,14 @@
 # A systematic map of syntheses on anthropogenic noise impacts on wildlife: evidence gaps, policy attention, and quality appraisal
 
-We share the full datasets, metadata to help you interpret them, and R code for the analyses and figures in Lenz et al. (2026).
+We created this repository to support open science and help others reproduce our synthesis of syntheses on noise impacts on wildlife, their quality and their use in policy. Here, we share the full datasets, metadata to help you interpret them, and R code for the analyses and figures in Lenz et al. (2026).
 
-You can find our pre-registered protocol on OSF ([Lenz et al. 2025](https://osf.io/dmjc4/)). We aimed to map reviews of the behavioural, physiological and ecological impacts of noise on wildlife across taxa and noise sources. We also aimed to examine research trends and collaboration networks, assess synthesis quality using CEESAT, and explore policy relevance. We originally deposited the protocol as an OSF project on 30 May 2025 and created a [formal registration of the same protocol](https://osf.io/7bx6g/) on 9 October 2026 for preservation.
+In this synthesis, we aimed to map reviews of the behavioural, physiological and ecological impacts of noise on wildlife across taxa and noise sources. We also aimed to examine research trends and collaboration networks, assess synthesis quality using CEESAT, and explore policy relevance.
+
+We deposited our protocol as an OSF project on 30 May 2025 ([Lenz et al. 2025](https://osf.io/dmjc4/)). Following OSF’s announcement of changes to its platform, we created a [formal registration of the same protocol](https://osf.io/7bx6g/) on 9 October 2026 for preservation. You can read the protocol at either link.
+
+Besides this repository, we uploaded supplementary material to the journal’s website, with further details on our methods, search strategy and screening decisions.
+
+If you have any questions or requests, please contact me: Anna Lenz — [lenzrive@ualberta.ca](mailto:lenzrive@ualberta.ca) — [ORCID: 0009-0002-5706-7815](https://orcid.org/0009-0002-5706-7815).
 
 ## GitHub contents
 
@@ -87,7 +93,3 @@ Please cite the Zenodo repository when using materials from this repository. We 
 ## License
 
 We share the repository’s software under the [MIT License](LICENSE). Copyright (c) 2025 AnnaLenzR. You may use, copy, modify and distribute the software provided that you retain the copyright and permission notices. The software is provided “as is”, without warranty. The original rights still apply to bibliographic source content. Contact Anna to request the separate animal artwork files.
-
-## Corresponding author
-
-Anna Lenz — [lenzrive@ualberta.ca](mailto:lenzrive@ualberta.ca) — [ORCID: 0009-0002-5706-7815](https://orcid.org/0009-0002-5706-7815).

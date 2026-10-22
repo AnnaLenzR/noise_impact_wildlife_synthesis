@@ -23,7 +23,7 @@ The table below lists the folder names and their contents.
 
 ## Dataset names, content and metadata
 
-The Data folder contains the files below. The table lists their full names, contents and matching codebooks, using the dataset descriptions from Online Resource 1.
+The Data folder contains the files below. The table lists their full names, contents and matching codebooks, using the dataset descriptions.
 
 <table>
   <thead>

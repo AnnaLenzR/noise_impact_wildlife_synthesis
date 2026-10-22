@@ -1,0 +1,26 @@
+﻿Variable,Category/Formats,Definition
+authors,Free text,"Abbreviated author initials and surnames separated by semicolons (e.g., “R., Williams, Rob; K.D., Cox, Kieran D.”)."
+author_full_names,Free text,"Full names of all authors with unique Scopus Author IDs in parentheses, separated by semicolons."
+author_id,Text / Numeric identifiers,"List of Scopus Author IDs corresponding to each author, separated by semicolons."
+title,Text,Full title of the publication.
+year,Integer (YYYY),Year the publication was released.
+cited_by,Integer,Number of citations the article has received (from Scopus).
+doi,Text,Digital Object Identifier (DOI) for the article.
+link,URL,Direct Scopus URL to the publication record.
+affiliations,Free text,"Institutional affiliations and countries of all authors, separated by semicolons."
+authors_with_affiliations,Free text / structured,Combined field listing each author followed by their institutional affiliation and country.
+abstract,Free text,Abstract text of the article summarizing the main findings.
+author_keywords,Free text,Author-supplied keywords (semicolon-separated).
+index_keywords,Free text,"Indexed keywords from Scopus (e.g., MeSH or subject tags)."
+funding_text,Free text,Narrative funding acknowledgment text included in the article.
+funding,Yes/No,Binary field indicating whether funding is reported (“yes” or empty).
+references,Free text,List of references cited by the article (semicolon-separated).
+editors,Empty / NA,Editor names; this column is empty for all records.
+publisher,Text,"Name of the publishing organization (e.g., Elsevier Ltd)."
+PubMed ID,Integer / NA,Unique PubMed identifier when available; missing for non-indexed items.
+language,Text (single category),Language of publication (all entries are “English”).
+document_type,Categorical,"Type of publication (e.g., Article, Review, Editorial)"
+publication_stage,Categorical,"Stage of publication (e.g., Final, Pre-print)"
+open_access,Yes/No,Whether the paper is open access
+source,Scopus,Name of the database
+eid,Text,Electronic identifier assigned by Scopus

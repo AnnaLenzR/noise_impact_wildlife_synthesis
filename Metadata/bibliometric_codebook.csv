@@ -1,0 +1,25 @@
+﻿Variable,Category/Formats,Definition
+citation_key,BibTeX entry identifier,Identifier after @ARTICLE{; not the extraction study_id. Each entry represents one of the 47 syntheses in Dataset 2. Absent or empty fields indicate unavailable metadata.
+abstract,BibTeX text field,Publication abstract.
+affiliations,BibTeX text field,"Institutional affiliations and countries, separated by semicolons."
+author,BibTeX text field,"Authors, separated by BibTeX and."
+author_keywords,BibTeX text field,Keywords in the exported author-keyword field.
+coden,BibTeX text field,Journal CODEN identifier.
+doi,BibTeX text field,Digital Object Identifier.
+isbn,BibTeX text field,"ISBN identifier(s), when available."
+issn,BibTeX text field,ISSN identifier(s).
+journal,BibTeX text field,Journal or proceedings title.
+keywords,BibTeX text field,Indexed keyword terms.
+language,BibTeX text field,Publication language.
+note,BibTeX text field,Scopus snapshot citation count (Cited by: n).
+number,BibTeX text field,Issue number.
+pages,BibTeX text field,Page range; can be empty for article-number publications.
+pmid,BibTeX text field,PubMed identifier.
+publication_stage,BibTeX text field,Scopus publication-stage label.
+publisher,BibTeX text field,Publisher.
+source,BibTeX text field,"Bibliographic source, Scopus."
+title,BibTeX text field,Publication title.
+type,BibTeX text field,Scopus document type.
+url,BibTeX text field,Scopus record URL.
+volume,BibTeX text field,Journal/proceedings volume.
+year,BibTeX text field,Publication year in this bibliography.

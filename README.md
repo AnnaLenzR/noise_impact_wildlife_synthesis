@@ -19,7 +19,7 @@ The table below lists the folder names and their contents.
 | [Data](Data/) | Seven final dataset files: six CSV files and one BibTeX (.bib) file. |
 | [Metadata](Metadata/) | Seven CSV codebooks with variable definitions to help you code and interpret each dataset. |
 | [R](R/) | The R Markdown file that reproduces the main and supplementary figures and analyses of the published article. |
-| [Figures](Figures/) | Two subfolders: [Final_figures](Figures/Final_figures/) contains the exported main figures, including the final Figure 2; [Supplementary](Figures/Supplementary/) contains the exported supplementary figures. |
+| [Figures](Figures/) | Two subfolders: [Final_figures](Figures/Final_figures/) contains the exported main figures; [Supplementary](Figures/Supplementary/) contains the exported supplementary figures. |
 
 ## Dataset names, content and metadata
 

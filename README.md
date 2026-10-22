@@ -46,7 +46,7 @@ The Data folder contains the files below. The table lists their full names, cont
   </tr>
   <tr>
     <td valign="top"><a href="Data/bibliometric.bib">bibliometric.bib</a></td>
-    <td valign="top">The same bibliometric dataset as Dataset 2, in BibTeX format. The code can use this file with bibliometrix to draw the chord diagram; by default, it uses the affiliations in Dataset 2.</td>
+    <td valign="top">The same bibliometric dataset as Dataset 2, in BibTeX format. The code can use this file with bibliometrix to draw the chord diagram.</td>
     <td valign="top"><a href="Metadata/bibliometric_codebook.csv">bibliometric_<br>codebook.csv</a></td>
   </tr>
   <tr>

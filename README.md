@@ -1,6 +1,6 @@
 # A systematic map of syntheses on anthropogenic noise impacts on wildlife: evidence gaps, policy attention, and quality appraisal
 
-[![Interactive tutorial](https://img.shields.io/badge/Tutorial-open%20in%20browser-537f72)](https://annalenzr.github.io/noise_impact_wildlife_synthesis/Analysis.html)
+[![Interactive tutorial](https://img.shields.io/badge/Tutorial-open%20in%20browser-537f72)](https://annalenzr.github.io/noise_impact_wildlife_synthesis/)
 [![Protocol](https://img.shields.io/badge/Protocol-OSF-8b5776)](https://doi.org/10.17605/OSF.IO/7BX6G)
 [![R](https://img.shields.io/badge/R-4.5.1-273d43)](#software-environment)
 [![License: MIT](https://img.shields.io/badge/License-MIT-607074)](LICENSE)
@@ -10,7 +10,7 @@ We created this repository to support open science and help others reproduce our
 In this synthesis, we mapped reviews of the behavioural, physiological and ecological impacts of noise on wildlife across taxa and noise sources. We also examined research trends and collaboration networks, assessed synthesis quality using CEESAT, and explored policy relevance.
 
 > [!TIP]
-> **No installation needed to explore the results.** Our [interactive tutorial](https://annalenzr.github.io/noise_impact_wildlife_synthesis/Analysis.html) shows every figure, the statistical analysis and the annotated R code in your browser. You can also download [Analysis.html](Analysis.html) and open it offline.
+> **No installation needed to explore the results.** Our [interactive tutorial](https://annalenzr.github.io/noise_impact_wildlife_synthesis/) shows every figure, the statistical analysis and the annotated R code in your browser. To read it offline, right-click [this download link](https://github.com/AnnaLenzR/noise_impact_wildlife_synthesis/raw/main/Analysis.html) and choose *Save link as…*, then open the saved file in any browser.
 
 ## Contents
 
@@ -39,7 +39,7 @@ Besides this repository, the journal's website hosts our supplementary material,
 | [R](R/) | The R Markdown file that reproduces the main and supplementary figures and analyses of the published article. |
 | [Figures](Figures/) | [Final_figures](Figures/Final_figures/) holds the main figures as PNG files, with 600-dpi TIFF versions in its `tiff` subfolder; [Supplementary](Figures/Supplementary/) holds the supplementary figures as PNG and PDF files. |
 
-The repository root also contains the rendered tutorial ([Analysis.html](Analysis.html)), the RStudio project file and [CITATION.cff](CITATION.cff).
+The repository root also contains the rendered tutorial (`Analysis.html`, published at [annalenzr.github.io/noise_impact_wildlife_synthesis](https://annalenzr.github.io/noise_impact_wildlife_synthesis/)), the RStudio project file and [CITATION.cff](CITATION.cff).
 
 ## Datasets and metadata
 

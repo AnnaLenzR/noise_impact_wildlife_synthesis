@@ -1,29 +1,49 @@
 # A systematic map of syntheses on anthropogenic noise impacts on wildlife: evidence gaps, policy attention, and quality appraisal
 
-We created this repository to support open science and help others reproduce our synthesis of syntheses on noise impacts on wildlife, their quality and their use in policy. Here, we share the full datasets, metadata to help you interpret them, and R code for the analyses and figures in Lenz et al. (2026).
+[![Interactive tutorial](https://img.shields.io/badge/Tutorial-open%20in%20browser-537f72)](https://annalenzr.github.io/noise_impact_wildlife_synthesis/Analysis.html)
+[![Protocol](https://img.shields.io/badge/Protocol-OSF-8b5776)](https://doi.org/10.17605/OSF.IO/7BX6G)
+[![R](https://img.shields.io/badge/R-4.5.1-273d43)](#software-environment)
+[![License: MIT](https://img.shields.io/badge/License-MIT-607074)](LICENSE)
 
-In this synthesis, we aimed to map reviews of the behavioural, physiological and ecological impacts of noise on wildlife across taxa and noise sources. We also aimed to examine research trends and collaboration networks, assess synthesis quality using CEESAT, and explore policy relevance.
+We created this repository to support open science and help others reproduce our synthesis of syntheses on noise impacts on wildlife, their quality and their use in policy. Here, we share the full datasets, metadata to help you interpret them, and the R code for the analyses and figures in Lenz et al. (2026).
 
-We deposited our protocol as an OSF project on 30 May 2025 ([Lenz et al. 2025](https://osf.io/dmjc4/)). Following OSF’s announcement of changes to its platform, we created a [formal registration of the same protocol](https://osf.io/7bx6g/) on 9 October 2026 for preservation. You can read the protocol at either link.
+In this synthesis, we mapped reviews of the behavioural, physiological and ecological impacts of noise on wildlife across taxa and noise sources. We also examined research trends and collaboration networks, assessed synthesis quality using CEESAT, and explored policy relevance.
 
-Besides this repository, we uploaded supplementary material to the journal’s website, with further details on our methods, search strategy and screening decisions.
+> [!TIP]
+> **No installation needed to explore the results.** Our [interactive tutorial](https://annalenzr.github.io/noise_impact_wildlife_synthesis/Analysis.html) shows every figure, the statistical analysis and the annotated R code in your browser. You can also download [Analysis.html](Analysis.html) and open it offline.
 
-If you have any questions or requests, please contact me: Anna Lenz — [lenzrive@ualberta.ca](mailto:lenzrive@ualberta.ca) — [ORCID: 0009-0002-5706-7815](https://orcid.org/0009-0002-5706-7815).
+## Contents
 
-## GitHub contents
+- [Protocol](#protocol)
+- [Repository contents](#repository-contents)
+- [Datasets and metadata](#datasets-and-metadata)
+- [Software environment](#software-environment)
+- [How to reproduce the analysis](#how-to-reproduce-the-analysis)
+- [How to cite](#how-to-cite)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
+- [License](#license)
 
-The table below lists the folder names and their contents.
+## Protocol
+
+We deposited our protocol as an OSF project on 30 May 2025 ([Lenz et al. 2025](https://doi.org/10.17605/OSF.IO/DMJC4)). Following OSF's announcement of changes to its platform, we created a [formal registration of the same protocol](https://doi.org/10.17605/OSF.IO/7BX6G) on 9 October 2026 for preservation. You can read the protocol at either link.
+
+Besides this repository, the journal's website hosts our supplementary material, with further details on our methods, search strategy and screening decisions.
+
+## Repository contents
 
 | Folder | Contents |
 |---|---|
 | [Data](Data/) | Seven final dataset files: six CSV files and one BibTeX (.bib) file. |
 | [Metadata](Metadata/) | Seven CSV codebooks with variable definitions to help you code and interpret each dataset. |
 | [R](R/) | The R Markdown file that reproduces the main and supplementary figures and analyses of the published article. |
-| [Figures](Figures/) | Two subfolders: [Final_figures](Figures/Final_figures/) contains the exported main figures; [Supplementary](Figures/Supplementary/) contains the exported supplementary figures. |
+| [Figures](Figures/) | [Final_figures](Figures/Final_figures/) holds the main figures as PNG files, with 600-dpi TIFF versions in its `tiff` subfolder; [Supplementary](Figures/Supplementary/) holds the supplementary figures as PNG and PDF files. |
 
-## Dataset names, content and metadata
+The repository root also contains the rendered tutorial ([Analysis.html](Analysis.html)), the RStudio project file and [CITATION.cff](CITATION.cff).
 
-The Data folder contains the files below. The table lists their full names, contents and matching codebooks, using the dataset descriptions.
+## Datasets and metadata
+
+The table lists each file in the Data folder, its content and its matching codebook in the Metadata folder.
 
 <table>
   <thead>
@@ -72,14 +92,77 @@ The Data folder contains the files below. The table lists their full names, cont
   </tbody>
 </table>
 
+## Software environment
+
+We rendered the tutorial and figures with the versions below. The tutorial's **R packages** table reports the same versions.
+
+> [!IMPORTANT]
+> **R 4.5.1.** Newer R releases should work, but package updates can change figure layout, fonts or colours.
+
+> [!NOTE]
+> **Data handling**
+>
+> | Package | Version |
+> |---|---|
+> | tidyverse | 2.0.0 |
+> | here | 1.0.2 |
+> | scales | 1.4.0 |
+> | countrycode | 1.9.0 |
+
+> [!NOTE]
+> **Figures and layout**
+>
+> | Package | Version |
+> |---|---|
+> | paletteer | 1.7.0 |
+> | treemapify | 2.6.1 |
+> | ComplexUpset | 1.3.3 |
+> | patchwork | 1.3.2 |
+> | ggalluvial | 0.12.6 |
+> | circlize | 0.4.18 |
+> | ggthemes | 7.0.0 |
+> | wordcloud2 | 0.2.1 |
+
+> [!NOTE]
+> **Bibliometrics and mapping**
+>
+> | Package | Version |
+> |---|---|
+> | bibliometrix | 5.5.0 |
+> | sf | 1.1.3 |
+> | rnaturalearth | 1.2.0 |
+> | rnaturalearthdata | 1.0.0 |
+
+> [!NOTE]
+> **Rendering and export**
+>
+> | Package | Version |
+> |---|---|
+> | rmarkdown | 2.31 |
+> | knitr | 1.51 |
+> | ragg | 1.5.2 |
+> | png | 0.1.9 |
+> | base64enc | 0.1.6 |
+
+> [!TIP]
+> To install all packages at once:
+>
+> ```r
+> install.packages(c(
+>   "tidyverse", "here", "paletteer", "scales", "treemapify",
+>   "bibliometrix", "ComplexUpset", "patchwork", "wordcloud2",
+>   "sf", "rnaturalearthdata", "rnaturalearth", "ggalluvial",
+>   "circlize", "countrycode", "png", "ragg", "ggthemes", "knitr",
+>   "base64enc", "rmarkdown"
+> ))
+> ```
+
 ## How to reproduce the analysis
 
-The R folder contains [Wildlife_syntheses_figures_.Rmd](R/Wildlife_syntheses_figures_.Rmd). Use this code with the datasets to recreate the figures we made in R and compare the quality of syntheses cited and not cited in policy documents.
-
-To run the code:
+The R folder contains [Wildlife_syntheses_figures_.Rmd](R/Wildlife_syntheses_figures_.Rmd). Use this code with the datasets to recreate the figures we made in R and to compare the quality of syntheses cited and not cited in policy documents.
 
 1. Clone or download this repository and open `Umbrella_review_noise.Rproj`, or set the working directory to the repository root.
-2. Install the packages listed in the R Markdown setup chunk if needed. The code checks which packages you need but does not install them.
+2. Install the packages listed under [Software environment](#software-environment). The code checks that they are installed and stops with a list of any that are missing; it does not install them for you.
 3. Render from the repository root:
 
 ```r
@@ -103,28 +186,40 @@ rmarkdown::render(
 )
 ```
 
-This exports main Figures 1, 3, 4 and 5 as 600-dpi PNG/TIFF and PDF, a code-generated base for Figure 2, and supplementary Figures S3–S11 as PNG/PDF. We manually edited the submitted Figure 2 in Affinity Designer 2, adding Anna Lenz’s original animal silhouettes and adjusting the Helvetica font size and appearance. You can find the final Figure 2 in this repository and request the separate original artwork files from Anna. We prepared Figures S1 and S2 manually in Affinity Designer 2. Figure S4 includes a saved word-cloud image. The code checks its keyword frequencies against the data and stops if they differ. If you change the keyword data, update both the image and its frequency table. Fonts and graphics software can affect how the figures look on another computer.
+This exports main Figures 1, 3, 4 and 5 as 600-dpi PNG/TIFF and PDF, a code-generated base for Figure 2, and supplementary Figures S3–S11 as PNG/PDF.
 
-We tested the code with R 4.5.1. The tutorial’s **R packages** table lists the package versions.
+> [!NOTE]
+> **Figures prepared outside R.** We edited the submitted Figure 2 in Affinity Designer 2, adding Anna Lenz's original animal silhouettes and adjusting the Helvetica font size and appearance. The final Figure 2 is in this repository; you can request the separate original artwork files from Anna. We also prepared Figures S1 and S2 in Affinity Designer 2.
 
-## Interactive tutorial to replicate the figures and analysis
+> [!WARNING]
+> **Figure S4 word cloud.** Figure S4 includes a saved word-cloud image. The code checks its keyword frequencies against the data and stops if they differ, so if you change the keyword data, update both the image and its frequency table. Fonts and graphics software can also change how figures look on another computer.
 
-Explore our [interactive tutorial](https://annalenzr.github.io/noise_impact_wildlife_synthesis/Analysis.html) to view the figures, analyses and annotated R code directly in your browser. You don’t need to install software or download any additional files. You can also download the [HTML tutorial](Analysis.html) to read it offline.
+## How to cite
 
-## Protocol and paper citations
+If you use materials from this repository, please cite the Zenodo archive. We will add its citation and DOI after archiving this release on Zenodo.
 
-Lenz A, Lundgren E, Mizuno A, Morrison K, Ortega S, Lagisz M, Nakagawa S. 2025. A systematic map of systematic reviews on anthropogenic noise impact on wildlife—protocol. OSF. https://doi.org/10.17605/OSF.IO/DMJC4.
+**Article**
 
-Nakagawa S, Lundgren E, Lagisz M, Ortega S, Morrison K, Mizuno A, Lenz A. 2025. A systematic map of systematic reviews on anthropogenic noise impact on wildlife—protocol. OSF. https://doi.org/10.17605/OSF.IO/DMJC4.
+Lenz A, Mizuno A, Lundgren E, Morrison K, Ortega S, Lagisz M, Nakagawa S. 2026. A systematic map of syntheses on anthropogenic noise impacts on wildlife: evidence gaps, policy attention, and quality appraisal. Environmental Science and Pollution Research. https://doi.org/10.1007/s11356-026-38268-9
 
-Lenz A, Nakagawa S, Lagisz M, Morrison K, Mizuno A, Ortega S, Lundgren E. 2025. A systematic map of systematic reviews on anthropogenic noise impact on wildlife—protocol. OSF. https://doi.org/10.17605/OSF.IO/7BX6G.
+**Protocol**
 
-Lenz A, Mizuno A, Lundgren E, Morrison K, Ortega S, Lagisz M, Nakagawa S. 2026. A systematic map of syntheses on anthropogenic noise impacts on wildlife: evidence gaps, policy attention, and quality appraisal. Environ Sci Pollut Res. https://doi.org/10.1007/s11356-026-38268-9.
+Lenz A, Nakagawa S, Lagisz M, Morrison K, Mizuno A, Ortega S, Lundgren E. 2025. A systematic map of systematic reviews on anthropogenic noise impact on wildlife – protocol. OSF. https://doi.org/10.17605/OSF.IO/DMJC4
+
+Lenz A, Nakagawa S, Lagisz M, Morrison K, Mizuno A, Ortega S, Lundgren E. 2026. A systematic map of systematic reviews on anthropogenic noise impact on wildlife – protocol [registration]. OSF Registries. https://doi.org/10.17605/OSF.IO/7BX6G
+
+**Data and code**
 
 Zenodo citation pending.
 
-Please cite the Zenodo repository when using materials from this repository. We will add the final citation and DOI after archiving this release on Zenodo.
+## Contact
+
+For questions or requests, please contact Anna Lenz — [lenzrive@ualberta.ca](mailto:lenzrive@ualberta.ca) — [ORCID 0009-0002-5706-7815](https://orcid.org/0009-0002-5706-7815).
+
+## Acknowledgements
+
+We used Claude (Anthropic), an AI assistant, to help manage this repository: editing the README, checking links and citations, and tidying documentation. The authors reviewed all changes. The data, analyses and scientific content are the authors' own.
 
 ## License
 
-We share the repository’s software under the [MIT License](LICENSE). Copyright (c) 2025 AnnaLenzR. You may use, copy, modify and distribute the software provided that you retain the copyright and permission notices. The software is provided “as is”, without warranty. The original rights still apply to bibliographic source content. Contact Anna to request the separate animal artwork files.
+We share the repository's software under the [MIT License](LICENSE). Copyright (c) 2025 AnnaLenzR. You may use, copy, modify and distribute the software provided that you retain the copyright and permission notices. The software is provided "as is", without warranty. The original rights still apply to bibliographic source content. Contact Anna to request the separate animal artwork files.

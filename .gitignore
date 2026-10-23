@@ -1,5 +1,11 @@
 # Public release allowlist. Other working files remain local.
 /*
+
+# Local AI-assistant and project-management notes (Aegis records, Claude settings).
+# The allowlist above already excludes them; these lines keep that explicit.
+/.aegis/
+/.claude/
+
 !/.gitignore
 !/README.md
 !/LICENSE
@@ -65,6 +71,5 @@
 !/Figures/Supplementary/Figure_S8_trends.png
 !/Figures/Supplementary/Figure_S9_trends_syntheses_cited_not_cited.pdf
 !/Figures/Supplementary/Figure_S9_trends_syntheses_cited_not_cited.png
-
 !/Figures/Final_figures/Figure_2_taxonomic_scope.png
 !/Figures/Final_figures/tiff/Figure2_taxonomic_scope.tiff

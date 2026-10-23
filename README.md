@@ -41,6 +41,23 @@ Besides this repository, the journal's website hosts our supplementary material,
 
 The repository root also contains the rendered tutorial (`Analysis.html`, published at [annalenzr.github.io/noise_impact_wildlife_synthesis](https://annalenzr.github.io/noise_impact_wildlife_synthesis/)), the RStudio project file and [CITATION.cff](CITATION.cff).
 
+The same folder structure is used in the Borealis deposit:
+
+```
+├── README.md                   This file
+├── Analysis.html               Rendered tutorial: figures, analysis and annotated code
+├── CITATION.cff                Citation metadata
+├── LICENSE                     MIT License
+├── Umbrella_review_noise.Rproj RStudio project (sets the working directory)
+├── Data/                       7 datasets (6 CSV, 1 BibTeX)
+├── Metadata/                   7 CSV codebooks, one per dataset
+├── R/                          Wildlife_syntheses_figures_.Rmd
+└── Figures/
+    ├── Final_figures/          Main Figures 1–5 (PNG)
+    │   └── tiff/               Main Figures 1–5 (600-dpi TIFF)
+    └── Supplementary/          Figures S1–S11 (PNG; PDF for S3–S11)
+```
+
 ## Datasets and metadata
 
 The table lists each file in the Data folder, its content and its matching codebook in the Metadata folder.

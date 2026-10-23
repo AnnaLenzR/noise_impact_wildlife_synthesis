@@ -196,7 +196,7 @@ This exports main Figures 1, 3, 4 and 5 as 600-dpi PNG/TIFF and PDF, a code-gene
 
 ## How to cite
 
-If you use materials from this repository, please cite the Zenodo archive. We will add its citation and DOI after archiving this release on Zenodo.
+If you use materials from this repository, please cite our article.
 
 **Article**
 
@@ -207,10 +207,6 @@ Lenz A, Mizuno A, Lundgren E, Morrison K, Ortega S, Lagisz M, Nakagawa S. 2026. 
 Lenz A, Nakagawa S, Lagisz M, Morrison K, Mizuno A, Ortega S, Lundgren E. 2025. A systematic map of systematic reviews on anthropogenic noise impact on wildlife – protocol. OSF. https://doi.org/10.17605/OSF.IO/DMJC4
 
 Lenz A, Nakagawa S, Lagisz M, Morrison K, Mizuno A, Ortega S, Lundgren E. 2026. A systematic map of systematic reviews on anthropogenic noise impact on wildlife – protocol [registration]. OSF Registries. https://doi.org/10.17605/OSF.IO/7BX6G
-
-**Data and code**
-
-Zenodo citation pending.
 
 ## Contact
 
